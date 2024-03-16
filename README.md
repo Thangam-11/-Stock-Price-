@@ -18,10 +18,38 @@ Potential Analysis
 Potential analyses that can be conducted using this dataset include:
 
 1.Correlation analysis to explore relationships between the stock prices of different companies.
+
 2.Time series analysis to forecast future stock prices based on historical data.
+
 3.Volatility analysis to measure the risk associated with each stock.
 
+
+
 The Stock Price Dataset provides valuable historical data that can be used for a wide range of analyses in the financial domain. Researchers and analysts can leverage this dataset to gain insights into the behavior of stock prices and make informed decisions in the stock market.
+
+
+markdown
+Copy code
+# Stock Price Prediction using LSTM
+
+## Introduction
+
+Welcome to the Stock Price Prediction using LSTM repository! In this project, we leverage the power of Long Short-Term Memory (LSTM) neural networks to predict stock prices. LSTM networks are well-suited for time series data like stock prices due to their ability to capture long-term dependencies.
+
+## Dataset Overview
+
+The dataset used in this project contains historical stock price data for multiple companies, including Amazon (AMZN), Domino's Pizza (DPZ), Bitcoin (BTC), and Netflix (NFLX). Each row in the dataset represents the stock prices for a specific date.
+
+## Model Building
+
+### LSTM Model Architecture
+# Define the LSTM model
+model = Sequential()
+model.add(LSTM(50, return_sequences=True, input_shape=(X_train.shape[1], 1)))
+model.add(LSTM(50, return_sequences=True))
+model.add(LSTM(50))
+model.add(Dense(1))
+model.compile(loss='mean_squared_error', optimizer='adam')
 
 
 
