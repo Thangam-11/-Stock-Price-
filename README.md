@@ -57,6 +57,25 @@ model.add(Dense(1))
 
 model.compile(loss='mean_squared_error', optimizer='adam')
 
+# Model Evaluation
+
+## Mean Squared Error (MSE)
+
+The Mean Squared Error is a commonly used metric to evaluate regression models' performance. It calculates the average of the squared differences between the actual values and the predicted values. A lower MSE indicates better model performance.
+To evaluate the LSTM model's performance on the test set, we calculated the Mean Squared Error using the predicted stock prices  and the actual stock prices.
+
+# Contributing
+
+Contributions to this project are welcome! If you encounter any issues or have suggestions for improvements, please feel free to submit a pull request.
+
+
+# Contact
+
+📧 Email: thangamani1128@gmail.com
+
+For any further questions or inquiries, feel free to reach out. We are happy to assist you with any queries.
+
+
 
 
 
